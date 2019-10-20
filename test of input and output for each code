@@ -1,0 +1,42 @@
+(base) C:\Python\CS>python 3aGL.py
+ref =  0.19276571095877654
+alfa =  0.9613
+N =  12
+sum =  0.19279641382493531
+integrand x[0] =  0.022242925942519892
+integrand x[-1] =  0.022242925942519892
+Elapsed time during the whole program in seconds: 26.0211446
+
+(base) C:\Python\CS>python 3bLa.py
+ref =  0.19276571095877654
+alfa =  1
+N =  11
+sum =  0.18302186535774417
+Elapsed time during the whole program in seconds: 21.8788655
+
+(base) C:\Python\CS>python 3ccarlo.py
+N =  1000000
+result =  [0.19310792]
+variance =  [1.33803306e-05]
+Elapsed time during the whole program in seconds: 19.9714635
+
+(base) C:\Python\CS>python 3dimproved.py
+N =  2000000
+result =  [0.19267458]
+variance =  [0.00014604]
+Elapsed time during the whole program in seconds: 37.8684669
+
+(base) C:\Python\CS>mpiexec -n 4 python 3eMPI.py
+N =  1000000
+ Rank:  3  value =  0.19326159154405806
+Elapsed time during the whole program in seconds: 26.945963
+N =  1000000
+ Rank:  2  value =  0.1916911542514125
+Elapsed time during the whole program in seconds: 26.9429779
+N =  1000000
+ Rank:  1  value =  0.19215577135557865
+Elapsed time during the whole program in seconds: 27.0973404
+N =  1000000
+ Rank:  0  value =  0.19508034684728873
+ Rank 0: value_avg =     0.1930472159995845
+Elapsed time during the whole program in seconds: 27.0904134
